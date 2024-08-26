@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div id="box1">aaa</div>
+    <div id="demo"></div>
+
+    <script>
+        let oo = {
+            name: "aa",
+            age: 10,
+            say: function () {
+                // alert("Hello");
+            }
+        }
+        oo.test = "test";
+        let va = Object.values(oo);
+        let key = Object.keys(oo);
+        va[2]();
+        console.log(key, va);
+        console.log(`test ${oo.age + 10}`)
+        let date=new Date();
+        console.log(date);
+        console.log(date.toDateString());
+        
+    </script>
+    <script src="myJs.js"></script>
+
 </body>
+
 </html>
